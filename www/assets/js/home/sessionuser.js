@@ -1,0 +1,1 @@
+checkSessions('client');

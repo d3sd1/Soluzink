@@ -1,0 +1,36 @@
+DirectoryIndex index.php
+ErrorDocument 400 /index.php
+ErrorDocument 401 /index.php
+ErrorDocument 403 /index.php
+ErrorDocument 404 /index.php
+ErrorDocument 500 /index.php
+RewriteEngine On
+Rewriterule ^nojs nojs.php
+Rewriterule ^sendlogin sendlogin.php
+Rewriterule ^sendforgot sendforgot.php
+Rewriterule ^users users.php
+Rewriterule ^login login.php
+Rewriterule ^start index.php
+Rewriterule ^logout logout.php
+Rewriterule ^langsMgr/(.*)/(.*)/(.*) langs.php?type=$1&langkey=$2&deleteReg=$3
+Rewriterule ^langsMgr/(.*)/(.*) langs.php?type=$1&langkey=$2
+Rewriterule ^locked locked.php
+Rewriterule ^getusers getUsers.php
+Rewriterule ^config webConfig.php
+Rewriterule ^profile profile.php
+Rewriterule ^calendar calendar.php
+Rewriterule ^tasks tasks.php
+Rewriterule ^sendlocked sendlocked.php
+Rewriterule ^permissions webPermissions.php
+Rewriterule ^adminsMgr adminsMgr.php
+Rewriterule ^addAdminsMgr addAdminsMgr.php
+Rewriterule ^patologies patologies.php
+Rewriterule ^addPatology addPatology.php
+Rewriterule ^sessionsdone sessionsdone.php
+Rewriterule ^contacts contacts.php
+Rewriterule ^closedcontacts closedcontacts.php
+Rewriterule ^contactresponse contactresponse.php
+Rewriterule ^tests tests.php
+Rewriterule ^modifytest modifytest.php
+Rewriterule ^addtest addtest.php
+Rewriterule ^syslogs syslogs.php

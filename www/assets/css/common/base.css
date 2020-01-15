@@ -1,0 +1,135 @@
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 13px;
+}
+::-webkit-scrollbar-track {
+    background: #FFF;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar-thumb {
+    background: #CCC;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.2);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #AAA;
+}
+::-webkit-scrollbar-thumb:active {
+    background: #888;
+    -webkit-box-shadow: inset 1px 1px 2px rgba(0,0,0,0.3);
+}
+/* Disable text selection */
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+/* Logo */
+@font-face {
+  font-family: BoulevardSaintDenisLight;
+  src: local("BoulevardSaintDenisLight"),
+       url(../../fonts/boulevard-saint-denis-light.ttf);
+  font-weight: bold;
+}
+@-webkit-keyframes logoFading {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@-moz-keyframes logoFading {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@-o-keyframes logoFading {
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+@keyframes logoFading { 
+    0%{background-position:0% 18%}
+    50%{background-position:100% 83%}
+    100%{background-position:0% 18%}
+}
+header .logo a {
+    font-size: 70px;
+    font-family: 'BoulevardSaintDenisLight', BoulevardSaintDenisLight;
+    top: -17px;
+    left: 15px;
+    position: absolute;
+    cursor: pointer;background: linear-gradient(270deg, #be84e5, #9237cf, #491d76);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: logoFading 10s ease infinite;
+    -moz-animation: logoFading 10s ease infinite;
+    -o-animation: logoFading 10s ease infinite;
+    animation: logoFading 10s ease infinite;
+}
+
+.z-index-5 {
+    z-index: 5
+}
+.fa-spin-custom, .glyphicon-spin {
+  -webkit-animation: spin 1000ms infinite linear;
+  animation: spin 1000ms infinite linear;
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+.right10 {
+    right: 10px
+}
+.disableClick {
+    pointer-events: none;
+}
+.hideme {
+    display: none
+}
+.float-left {
+    float: left
+}
+.alert-minimalist {
+	background-color: rgb(241, 242, 240);
+	border-color: rgba(149, 149, 149, 0.3);
+	border-radius: 3px;
+	color: rgb(149, 149, 149);
+	padding: 10px;
+}
+.alert-minimalist > a > [data-notify="icon"] {
+	height: 50px;
+	margin-right: 12px;
+}
+.alert-minimalist > a > [data-notify="title"] {
+	color: rgb(51, 51, 51);
+	display: block;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+.alert-minimalist > a > [data-notify="message"] {
+	font-size: 80%;
+        color: rgb(149,149,149)
+}
+.nopadding {
+   padding: 0;
+   margin: 0;
+}

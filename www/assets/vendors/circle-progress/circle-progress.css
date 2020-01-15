@@ -1,0 +1,36 @@
+
+.progressCircle {
+  width: 100px;
+  margin: 6px 6px 20px;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.progressCircle canvas {
+  vertical-align: top;
+}
+
+.progressCircle strong {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.progressCircle strong i {
+  font-style: normal;
+  font-size: 0.6em;
+  font-weight: normal;
+}
+
+.progressCircle span {
+  display: block;
+  color: #aaa;
+  margin-top: 12px;
+}

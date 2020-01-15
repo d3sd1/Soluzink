@@ -1,0 +1,127 @@
+.loaderHeader {
+	position: fixed;
+	top: 0;
+	z-index: 100;
+	min-height: 480px;
+	width: 100%;
+	height: 100%;
+	background: #f1f1f1;
+}
+
+.loaderHeader h1 {
+	margin: 0;
+}
+
+.loaderLogo,
+.loaderStatus {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
+.loaderLogo {
+	text-align: center;
+	height: 100%;
+	-webkit-transform: translate3d(0,25%,0);
+	transform: translate3d(0,25%,0);
+}
+
+.loaderLogo a {
+    font-size: 120px;
+    font-family: 'BoulevardSaintDenisLight', BoulevardSaintDenisLight;
+    cursor: pointer;background: linear-gradient(270deg, #be84e5, #9237cf, #491d76);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: logoFading 10s ease infinite;
+    -moz-animation: logoFading 10s ease infinite;
+    -o-animation: logoFading 10s ease infinite;
+    animation: logoFading 10s ease infinite;
+}
+
+.loaderStatus {
+	bottom: 40%;
+}
+.loaderLogo.loaded {
+	top: -500px
+}
+.loaderLogo.loading {
+	top: 0px;
+}
+.loaderHeader .loaderStatusGraphic {
+	display: block;
+	margin: 0 auto;
+}
+.loaderHeader .loaderStatus svg path {
+	fill: none;
+	stroke-width: 6;
+}
+
+.loaderHeader .loaderStatus svg path.loaderStatus-circlebg {
+	stroke: #ddd;
+}
+
+.loaderHeader .loaderStatus svg path.loaderStatus-circle {
+	-webkit-transition: stroke-dashoffset 0.2s;
+	transition: stroke-dashoffset 0.2s;
+	stroke: #9237cf;
+}
+/* Animations */
+
+/* Initial animation of header elements */
+.loading .loaderLogo,
+.loading .loaderStatus {
+	opacity: 1;
+	-webkit-animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+	animation: animInitialHeader 1s cubic-bezier(0.7,0,0.3,1) both;
+}
+
+.loading .loaderStatus {
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
+}
+
+@-webkit-keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); }
+}
+
+@keyframes animInitialHeader {
+	from { opacity: 0; -webkit-transform: translate3d(0,800px,0); transform: translate3d(0,800px,0); }
+}
+
+/* Header elements when loading finishes */
+.loaded .loaderLogo,
+.loaded .loaderStatus {
+	opacity: 1;
+}
+
+.loaded .loaderStatus {
+	-webkit-animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedLoader 0.5s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+@keyframes animLoadedLoader {
+	to { opacity: 0; -webkit-transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); transform: translate3d(0,-100%,0) scale3d(0.3,0.3,1); }
+}
+
+
+/* Header animation when loading finishes */
+.loaded .loaderHeader {
+	-webkit-animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+	animation: animLoadedHeader 1s cubic-bezier(0.7,0,0.3,1) forwards;
+}
+
+@-webkit-keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); }
+}
+
+@keyframes animLoadedHeader {
+	to { -webkit-transform: translate3d(0,-100%,0); transform: translate3d(0,-100%,0); }
+}

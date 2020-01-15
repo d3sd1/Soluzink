@@ -1,0 +1,338 @@
+html,
+button,
+input,
+select,
+textarea{
+color:#222;
+}
+html{
+font-size:1em;
+line-height:1.4;
+}
+::-moz-selection{
+background:#b3d4fc;
+text-shadow:none;
+}
+::selection{
+background:#b3d4fc;
+text-shadow:none;
+}
+hr{
+display:block;
+height:1px;
+border:0;
+border-top:1px solid #ccc;
+margin:1em 0;
+padding:0;
+}
+audio,
+canvas,
+img,
+video{
+vertical-align:middle;
+}
+fieldset{
+border:0;
+margin:0;
+padding:0;
+}
+textarea{
+resize:vertical;
+}
+.browsehappy{
+margin:0.2em 0;
+background:#ccc;
+color:#000;
+padding:0.2em 0;
+}
+.ir{
+background-color:transparent;
+border:0;
+overflow:hidden;
+*text-indent:-9999px;
+}
+.ir:before{
+content:"";
+display:block;
+width:0;
+height:150%;
+}
+.hidden{
+display:none !important;
+visibility:hidden;
+}
+.visuallyhidden{
+border:0;
+clip:rect(0 0 0 0);
+height:1px;
+margin:-1px;
+overflow:hidden;
+padding:0;
+position:absolute;
+width:1px;
+}
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus{
+clip:auto;
+height:auto;
+margin:0;
+overflow:visible;
+position:static;
+width:auto;
+}
+.invisible{
+visibility:hidden;
+}
+.clearfix:before,
+.clearfix:after{
+content:" ";
+display:table;
+}
+.clearfix:after{
+clear:both;
+}
+.clearfix{
+*zoom:1;
+}
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi){
+}
+@media print{
+* {
+        background:transparent !important;
+color:#000 !important;
+-webkit-box-shadow:none !important;
+   -moz-box-shadow:none !important;
+        box-shadow:none !important;
+text-shadow:none !important;
+}
+a,
+    a:visited{
+text-decoration:underline;
+}
+a[href]:after{
+content:" (" attr(href) ")";
+}
+abbr[title]:after{
+content:" (" attr(title) ")";
+}
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after{
+content:"";
+}
+pre,
+    blockquote{
+border:1px solid #999;
+page-break-inside:avoid;
+}
+thead{
+display:table-header-group;
+}
+tr,
+    img{
+page-break-inside:avoid;
+}
+img{
+max-width:100% !important;
+}
+@page{
+margin: 0.5cm;
+}
+p,
+    h2,
+    h3{
+orphans:3;
+widows:3;
+}
+h2,
+    h3{
+page-break-after:avoid;
+}
+}
+
+#nav{
+display:block;
+}
+.fix{
+overflow:hidden;
+}
+.floatleft{
+float:left;
+}
+.floatright{
+float:right;
+}
+.alignleft{
+float:left;
+margin-right:10px;
+}
+.alignright{
+float:right;
+margin-left:10px;
+}
+.aligncenter{
+display:block;
+margin:0 auto;
+}
+a, a:active, a:focus, a:active{
+text-decoration:none !important;
+}
+a:focus{
+outline:0px solid;
+}
+img{
+max-width:100%;
+}
+h1, h2, h3, h4, h5, h6{
+font-weight:normal;
+margin:0 0 15px;
+}
+.column{
+width:780px;
+margin:0 auto;
+display:block;
+-webkit-transition:all 0.9s ease 0s;
+   -moz-transition:all 0.9s ease 0s;
+     -o-transition:all 0.9s ease 0s;
+        transition:all 0.9s ease 0s;
+}
+ul{
+margin:0;
+padding:0;
+list-style:none;
+}
+body{
+background:url(../../images/nojs/background.png) no-repeat scroll 0 0 #000;
+background-size:100% auto;
+background-attachment:fixed;
+background-position:center top;
+background-repeat:no-repeat;
+color:#fff;
+font-family:'Open Sans', sans-serif;
+margin:150px 0;
+font-weight:400;
+}
+ul#mobile_menu{
+display:none;
+}
+div{
+overflow:hidden;
+}
+.four_zero_warapper_area{
+}
+.header{
+background:url(../../images/nojs/four-zero-four.png) no-repeat scroll center center;
+background-size:cover;
+width:710px;
+height:250px;
+}
+
+.header h3{
+font-size:31px;
+padding-top:116px;
+text-align:center;
+}
+.four_zero_text{
+margin-bottom:50px;
+text-align:center;
+}
+.four_zero_text h1{
+-webkit-transition:all .8s ease 0s;
+   -moz-transition:all .8s ease 0s;
+     -o-transition:all .8s ease 0s;
+        transition:all .8s ease 0s;
+margin-top:12px;
+font-size:60px;
+font-family:'Open Sans', sans-serif;
+margin-bottom:20px;
+cursor:pointer;
+color: #fff
+}
+.four_zero_text h1:hover{
+font-size:40px;
+color:#0cc2f8;
+}
+.four_zero_text p{
+-webkit-transition:all 1s ease 0s;
+   -moz-transition:all 1s ease 0s;
+     -o-transition:all 1s ease 0s;
+        transition:all 1s ease 0s;
+font-size:14px;
+cursor:pointer;
+color: #fff
+}
+.four_zero_text p:hover{
+font-size:19px;
+color:#0cc2f8;
+}
+.mainmenu_area{
+}
+.mainmenu_bg{
+background:url(../../images/nojs/menu_bg.png) repeat scroll 0 0;
+}
+.mainmenu{
+}
+.mainmenu ul{
+text-align:center;
+}
+.mainmenu ul li{
+display:inline;
+}
+.mainmenu ul li a{
+color:#F4F9FA;
+display:inline-block;
+font-size:14px;
+padding:40px 20px;
+}
+.mainmenu ul li a:hover{
+-webkit-transition:all .6s ease 0s;
+   -moz-transition:all .6s ease 0s;
+     -o-transition:all .6s ease 0s;
+        transition:all .6s ease 0s;
+background:#17577E;
+color:#0cc2f8;
+}
+.menu_heading h2{
+text-align:center;
+font-size:19px;
+font-weight:600;
+font-family:'Open Sans', sans-serif;
+}
+/*================= Mobile Layout: 768px. =====================*/
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+.column {width:750px}
+.header{
+background:url(img/four-zero-four.png) no-repeat scroll center center;
+background-size:cover;
+}
+
+}
+
+
+
+/*================= Mobile Layout: 320px. =====================*/
+@media only screen and (max-width: 766px) {
+.column  {width:300px}
+.header{
+background:url(img/four-zero-four.png) no-repeat scroll center center;
+background-size:320px;
+width:320px;
+height:112px;
+}
+}
+
+
+
+/* ================== Wide Mobile Layout: 480px. ==================== */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.column {width:450px}
+.header{
+background:url(img/four-zero-four.png) no-repeat scroll center center;
+background-size:450px;
+width:450px;
+height:250px;
+}
+}
